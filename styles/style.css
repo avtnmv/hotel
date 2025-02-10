@@ -694,6 +694,238 @@ dialog::backdrop {
 .speakers-job-modal{
     text-align: center;
 }
+.price{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+.price-category{
+    font-size: 78px;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+.price-cards-container{
+    display: flex;
+    justify-content: end;
+    gap: 32px;
+}
+
+.price-card-flex-p{
+    display: flex;
+    gap: 10px;
+}
+.price-card-one{
+    background-color: #F7F7F7;
+    border-radius: 32px;
+    width: 588px;
+    display: flex;
+    flex-direction: column;
+    height: 283px;
+    padding: 20px;
+}
+.price-card-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.price-card-flex-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #0141F9;
+    text-align: center;
+}
+.big-price-card-p{
+    color: #0141F9;
+    font-size: 48px;
+}
+.price-card-heading{
+    font-size: 24px;
+    font-style: italic;
+    color: #0141F9;
+}
+.price-cards-end{
+    display: flex;
+    justify-content: end;
+}
+.price-cards-wrap{
+    width: 906px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.price-card-bg{
+    background-image: url(../assets/images/price-card-bg.png);
+    background-size: contain;
+
+}
+.bold-heading{
+    font-size: 78px;
+    font-weight: 400;
+}
+.do-not-lose{
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.do-not-lose-motto{
+    width: 588px;
+}
+.price-button{
+    width: 588px;
+    height: 506.8px;
+    flex-direction: column-reverse;
+    font-size: 20px;
+}
+.price-button svg{
+    width: 100px;
+    height: 100px;
+}
+.marquee-heading-wrap{
+    max-width: 1200px;
+    margin: auto;
+}
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.marquee-content svg {
+    width: 150px;
+    height: 80px;
+    flex-shrink: 0;
+}
+.marquee-heading-wrap{
+    max-width: 1200px;
+
+}
+.location{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+.middle-bold-heading{
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.location-p-text{
+    width: 300px;
+}
+.bank-link{
+    color: #0141F9;
+    text-decoration: underline;
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+.bank-location{
+    width: 588px;
+    height: 471px;
+}
+.location-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.location-photo{
+    width: 282px;
+    height: 211px;
+}
+.location-photos{
+    display: flex;
+    gap: 20px;
+}
+.FAQ{
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 96px;
+}
+
+
+
+
+.accordion {
+    width: 906px;
+    border-top: 0.5px solid #D6D6D6;
+    border-bottom: 0.5px solid #D6D6D6;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    height: 90px; /* Фиксированная высота заголовка */
+    justify-content: space-between;
+    padding: 0 48px;
+    cursor: pointer;
+    outline: none;
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .accordion-header svg {
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-header.active svg {
+    transform: rotate(-45deg);
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, margin-top 0.3s ease-in-out;
+    padding: 0 48px;
+  }
+  
+  .accordion-header.active + .accordion-content {
+    margin-top: -24px;
+  }
+  
+  .accordion-content p {
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 24px;
+    width: 626px;
+  }
+
+.faq-number{
+    color:#0141F9;
+    font-size: 14px;
+}
+.accordion-header-text{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.faq-container {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+.premier{
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 96px;
+}
+
+
+
 @media (prefers-reduced-motion: reduce) {
     *,
     ::before,
@@ -879,7 +1111,91 @@ dialog::backdrop {
       .thesis-list{
         width: 300px;
       }
+      .price-category {
+        font-size: 48px;
+        font-weight: 400;
+        width: 330px;
+        margin: auto;
+        margin-bottom: 48px;
+      }
+      .price-card-one {
+    height: 264px;
+        width: 330px;
+
+      }
+      .price-cards-wrap{
+        align-items: center;
+      }
+      .do-not-lose{
+        flex-direction: column;
+        gap: 24px;
+      }
+      .do-not-lose-motto {
+        width: 330px;
+      }
+      .bold-heading{
+        font-size: 48px;
+      }
+      .price-button{
+        height: 254px; 
+        border-radius: 32px;
+      }
+      .marquee-content{
+        gap: 30px;
+        
+      }
+      .marquee-container {
+        width: 330px;
+        overflow: hidden;
+    }
+    .location-container{
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+    .location-text{
+        width: 330px;
+        margin: auto;
+    }
+    .middle-bold-heading{
+        font-size: 48px;
+    }
+    .location-photos{
+        width: 330px;
+    }
+    .location-photo{
+        width: 155px;
+        height: 120px;
+    }
+    .bank-location {
+        width: 330px;
+        height: 300px;
+      }
+      .location{
+        margin-top: 64px;
+        margin-bottom: 64px;
+      }
+      .price{
+        margin-bottom: 64px;
+        margin-top: 64px;
+      }
+      .accordion{
+        width: 330px;
+      }
+      .faq-container{
+        justify-content: center;
+      }
+      .accordion-header{
+        font-size: 18px;
+      }
+      .accordion-content p {
+        font-size: 14px;
+      }
+      .FAQ{
+        margin-bottom: 64px;
+      }
 }
+
+
 @media (max-width: 400px) {
     .form-heading {
         font-size: 20px; /* Еще меньше для очень маленьких экранов */

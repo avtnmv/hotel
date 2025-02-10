@@ -2,24 +2,20 @@ export function initSpeakers() {
     const openButtons = document.querySelectorAll(".open-speaker-info");
     const dialogs = document.querySelectorAll(".fade-dialog");
 
-    let scrollY = 0;
+    let scrollY = 0; 
 
     function openDialog(dialog) {
         if (!dialog.open) {
-            scrollY = window.scrollY;
+            scrollY = window.scrollY; 
 
-            // Фиксируем скролл
-            document.documentElement.style.scrollBehavior = "auto"; 
-            document.body.style.overflow = "hidden";
-            document.body.style.position = "relative";
+            document.body.style.position = "fixed";
+            document.body.style.width = "100%";
             document.body.style.top = `-${scrollY}px`;
 
-            // Открываем модалку
-            dialog.style.opacity = "0"; // Сначала делаем прозрачной
-            dialog.style.transform = "scale(0.9)"; // Начальное состояние для анимации
+            dialog.style.opacity = "0";
+            dialog.style.transform = "scale(0.9)";
             dialog.showModal();
 
-            // Запускаем анимацию после рендера
             setTimeout(() => {
                 dialog.style.opacity = "1";
                 dialog.style.transform = "scale(1)";
@@ -30,18 +26,22 @@ export function initSpeakers() {
     function closeDialog(dialog) {
         dialog.style.opacity = "0";
         dialog.style.transform = "scale(0.9)";
-
+    
         setTimeout(() => {
             dialog.close();
-
-            // Восстанавливаем скролл
+    
             document.body.style.removeProperty("overflow");
             document.body.style.removeProperty("position");
             document.body.style.removeProperty("top");
-
+            document.body.style.overflow = "auto"; 
+    
+            document.documentElement.style.scrollBehavior = "auto";
+    
             requestAnimationFrame(() => {
-                window.scrollTo(0, scrollY);
-                document.documentElement.style.scrollBehavior = "";
+                window.scrollTo(0, scrollY); 
+                requestAnimationFrame(() => {
+                    document.documentElement.style.scrollBehavior = "smooth";
+                });
             });
         }, 500);
     }
@@ -61,7 +61,6 @@ export function initSpeakers() {
             closeDialog(dialog);
         });
 
-        // Закрытие по клику вне области модального окна
         dialog.addEventListener("click", (event) => {
             if (event.target === dialog) {
                 closeDialog(dialog);

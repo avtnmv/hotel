@@ -6,3 +6,6 @@ initModalWindow();
 
 import { initSpeakers } from './speakers-modal-info.js';
 initSpeakers();
+
+import { initAccordeon } from './accordeon.js';
+initAccordeon();

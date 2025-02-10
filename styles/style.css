@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Helvetica Neue';
-    src: url('/fonts/HelveticaNeue-Medium.woff2') format('woff2');
+    src: url('../fonts/HelveticaNeue-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Helvetica Neue';
-    src: url('/fonts/HelveticaNeue-Roman.woff2') format('woff2');
+    src: url('../fonts/HelveticaNeue-Roman.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -401,7 +401,7 @@ dialog::backdrop {
     
     display: flex;
     flex-direction: column;
-    background-image: url('/assets/images/herosection-bg.webp');
+    background-image: url('../assets/images/herosection-bg.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -775,7 +775,7 @@ dialog::backdrop {
         width: 330px;
     }
     .mobile-bg-container{
-        background-image: url('/assets/images/herosection-bg.webp');
+        background-image: url('../assets/images/herosection-bg.webp');
         background-size: cover;
         background-repeat: no-repeat;
         margin-bottom: 24px;

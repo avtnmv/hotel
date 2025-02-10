@@ -987,6 +987,68 @@ dialog::backdrop {
     text-align: center; 
     width: 140px;
 }
+
+.ticker-inline {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .ticker-inline-bottom-trial {
+    margin-bottom: 4rem;
+  }
+  
+  .tickers {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    display: block;
+  }
+  
+  .ticker1 {
+    position: absolute;
+    top: 2px;
+    left: -110%;
+    animation: marquee1 1s linear infinite;
+  }
+  
+  .ticker {
+    display: flex;
+    font-family: var(--font-first);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    color: #969696;
+    animation: startLine 15s linear, marquee 15s linear 15s infinite;
+    width: 2630px;
+    margin: 0 auto;
+  }
+  
+  .ticker__head {
+    width: 430px;
+    text-align: center;
+    margin-left: 10px;
+  }
+  
+  @keyframes startLine {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
 @media (prefers-reduced-motion: reduce) {
     *,
     ::before,
@@ -1282,19 +1344,11 @@ dialog::backdrop {
         width: 260px;
         margin-top: 8px;
     }
-}
-
-@media (max-width: 400px) {
-    .form-heading {
-        font-size: 20px; /* Еще меньше для очень маленьких экранов */
-        line-height: 22px;
+    .accordion-content-p{
+        font-size: 14px;
     }
-
-    .text-field__input {
-        font-size: 12px;
-    }
-
-    .form__submit {
-        font-size: 12px;
+    .tickers{
+        width: 330px;
     }
 }
+

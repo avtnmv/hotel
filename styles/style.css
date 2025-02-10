@@ -924,8 +924,69 @@ dialog::backdrop {
     margin-bottom: 96px;
 }
 
+.premier-container-block-one{
+    width: 588px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.premier-button{
+    width: 588px;
+}
+.premier-container{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
 
+.premier-container-block-two{
+    background-color: #F7F7F7;
+    padding: 30px;
+    width: 588px;
+    border-radius: 24px;
+    
+}
+.premier-row-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
 
+}
+.premier-row-one p{
+    width: 250px;
+}
+.color-text{
+    color: #0141F9;
+}
+
+.premier-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.premier-row-two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.hotel-link{
+    color: #0141F9;
+    text-decoration: underline; 
+    display: block;
+    text-align: center;
+}
+.premier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.premier-row-p{
+    text-align: center; 
+    width: 140px;
+}
 @media (prefers-reduced-motion: reduce) {
     *,
     ::before,
@@ -1145,7 +1206,6 @@ dialog::backdrop {
         
       }
       .marquee-container {
-        width: 330px;
         overflow: hidden;
     }
     .location-container{
@@ -1188,13 +1248,41 @@ dialog::backdrop {
         font-size: 18px;
       }
       .accordion-content p {
-        font-size: 14px;
+        font-size: 14px !important;
       }
       .FAQ{
         margin-bottom: 64px;
       }
+      .premier-svg{
+        display: none;
+      }
+      .premier-container-block-one{
+        width: 330px;
+      }
+      .premier-container{
+        width: 330px;
+        margin: auto;
+      } 
+      .premier-container-block-two{
+        width: 330px;
+      }
+      .premier-row-one{
+        flex-direction: column;
+        gap: 16px;
+      }
+      .premier-row-one p {
+        width: 260px;
+      }
+      .premier-row-two{
+        flex-direction: column;
+        gap: 16px;
+      } 
+      .premier-row-p{
+        text-align: center; 
+        width: 260px;
+        margin-top: 8px;
+    }
 }
-
 
 @media (max-width: 400px) {
     .form-heading {

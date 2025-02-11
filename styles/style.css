@@ -1048,6 +1048,12 @@ dialog::backdrop {
   .accordion-content{
     margin-bottom: 16px;
   }
+  .voloshyn{
+    width: 295px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
   @keyframes startLine {
     0% {
       transform: translateX(-100%);

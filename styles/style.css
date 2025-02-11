@@ -857,6 +857,7 @@ dialog::backdrop {
 
 .accordion {
     width: 906px;
+    height: 90px;
     border-top: 0.5px solid #D6D6D6;
     border-bottom: 0.5px solid #D6D6D6;
     overflow: hidden;
@@ -1041,7 +1042,12 @@ dialog::backdrop {
   .color-hero{
     font-weight: 400;
   }
-  
+  #accordion-content-p{
+    margin-left: 28px;
+  }
+  .accordion-content{
+    margin-bottom: 16px;
+  }
   @keyframes startLine {
     0% {
       transform: translateX(-100%);
@@ -1312,6 +1318,7 @@ dialog::backdrop {
       }
       .accordion{
         width: 330px;
+        height: 90px;
       }
       .faq-container{
         justify-content: center;
@@ -1360,5 +1367,9 @@ dialog::backdrop {
     .tickers{
         width: 330px;
     }
+
+    .accordion-header.active + .accordion-content {
+        margin-top: -20px;
+      }
 }
 

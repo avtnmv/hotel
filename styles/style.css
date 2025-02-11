@@ -897,7 +897,7 @@ dialog::backdrop {
     margin-top: -24px;
   }
   
-  .accordion-content p {
+  #accordion-content p {
     margin: 0;
     padding-top: 12px;
     padding-bottom: 24px;
@@ -1030,6 +1030,11 @@ dialog::backdrop {
     width: 430px;
     text-align: center;
     margin-left: 10px;
+  }
+  .footer-image{
+    width: 100%;
+    margin: auto;
+    height: 100%;
   }
   
   @keyframes startLine {
@@ -1309,7 +1314,7 @@ dialog::backdrop {
       .accordion-header{
         font-size: 18px;
       }
-      .accordion-content p {
+      #accordion-content p {
         font-size: 14px !important;
       }
       .FAQ{

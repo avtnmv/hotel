@@ -1324,7 +1324,7 @@ dialog::backdrop {
       }
       .accordion{
         width: 330px;
-        height: 90px;
+        height: 100px;
       }
       .faq-container{
         justify-content: center;

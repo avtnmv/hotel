@@ -986,6 +986,7 @@ dialog::backdrop {
 .premier-row-p{
     text-align: center; 
     width: 140px;
+    margin-top: 12px;
 }
 
 .ticker-inline {
@@ -1036,6 +1037,9 @@ dialog::backdrop {
     margin: auto;
     height: 100%;
     margin: auto;
+  }
+  .color-hero{
+    font-weight: 400;
   }
   
   @keyframes startLine {

@@ -1054,6 +1054,152 @@ dialog::backdrop {
     flex-direction: column;
     gap: 12px;
   }
+  .social{
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 96px;
+  }
+  .social-heading{
+    width: 588px;
+    margin-bottom: 32px;
+  }
+  .social-button{
+    display: flex;
+    background-color: #0141F9;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    height: 58px;
+    transition: .3s ease-in;
+
+    &:hover{
+        background: #0366D6;
+    }
+  }
+  .social-first-block{
+    width: 588px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-self: end;
+  }
+  .social-p-container{
+    width: 294px;
+  }
+  .qr-image{
+    width: 588px;
+  }
+  .social-caontainer{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .footer-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 15px;
+    height: 648px;
+
+  }
+  .first-footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer{
+    width: 100%;
+    background-image: url('../assets/images/footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  .footer-links{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer-links a{
+    color: white;
+  }
+
+  .dev{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .devs-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .dev-motto{
+    font-size: 16px;
+    color: #8DA6F0;
+  }
+  .dev-name{
+    font-size: 14px;
+    color: #8DA6F0;
+    font-style: italic;
+    text-decoration: underline;
+  }
+  .dev-job{
+    font-size: 12px;
+    color: #8DA6F0;
+    font-style: italic;
+  }
+  .sale-department{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .sale-dep-motto{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+  }
+  .sale-dep-p{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .sale-dep-p a, .sale-dep-p p{
+    color: white;
+  }
+  .sale-dep-contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .footer-button{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+
+  }
+  .footer-contacts-links{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .second-footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-mobile-figure{
+    display: none;
+  }
+  .right-section{
+    width: 570px;
+  }
   @keyframes startLine {
     0% {
       transform: translateX(-100%);
@@ -1376,6 +1522,53 @@ dialog::backdrop {
 
     .accordion-header.active + .accordion-content {
         margin-top: -20px;
+      }
+      .premier{
+        margin-bottom: 64px;
+      }
+      .social{
+        margin-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .social-caontainer{
+        flex-direction: column;
+      }
+      .social-first-block{
+        width: 330px;
+      }
+      .social-heading{
+        width: 330px;
+      }
+      .qr-image{
+        width: 330px;
+      }
+      .social-p-container{
+        width: 330px;
+      }
+      .social-button{
+        margin-bottom: 24px;
+      }
+      .sale-department{
+        text-align: end;
+      }
+      .footer-container{
+        width: 330px;
+        height: 444px;
+      }
+      .footer-contacts-links{
+        flex-direction: column;
+        gap: 8px;
+      }
+      footer{
+        background-image: none;
+        background-color: #0141F9;
+      }
+      .footer-mobile-figure{
+        display: block;
+        text-align: center;
+        margin: auto;
       }
 }
 

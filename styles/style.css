@@ -1002,7 +1002,6 @@ dialog::backdrop {
   .tickers {
     position: relative;
     display: inline-block;
-    white-space: nowrap;
     width: 1200px;
     overflow: hidden;
     margin: auto;

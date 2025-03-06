@@ -1214,6 +1214,22 @@ dialog::backdrop {
     transition: .3s ease-in;
     font-size: 24px;
   }
+  .form__checkbox_mobile{
+    display: none;
+  }
+  .program-pdf-mobile{
+    display: none;
+    background-color: #0141F9;
+    color: white;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 330px;
+    height: 146px;
+    transition: .3s ease-in;
+    font-size: 24px;
+  }
   .wrap {
     max-width: 1200px;
     margin: auto;
@@ -1274,6 +1290,7 @@ dialog::backdrop {
     transition: all 0.1s ease-in-out;
     background-color: #fff;
   }
+  
   .item:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -1651,6 +1668,23 @@ dialog::backdrop {
         display: block;
         text-align: center;
         margin: auto;
+      }
+      .program-pdf{
+          display: none;
+      }
+      .program-pdf-mobile{
+        display: block;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+     .form__checkbox_desktop{
+        display: none;
+      }
+      .form__checkbox_mobile{
+        display: block;
       }
 }
 

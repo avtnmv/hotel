@@ -14,8 +14,6 @@
   <link rel="manifest" href="./assets/favicon/site.webmanifest">
   <script src="./scripts/main.js" type="module"></script>
 
-  <
-
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -112,7 +110,21 @@
 
                     <label class="text-field__label" for="phone">Телефон</label>
                   </div>
+
+                  <div class="form__checkbox_mobile">
+                    <input type="checkbox" id="checkbox" name="checkbox" required>
+                    <label for="checkbox">Я погоджуюсь на обробку моїх <a href="./policy-mobile.pdf">персональних даних</a></label>
+                  </div>
+
+                  <div class="form__checkbox_desktop">
+                    <input type="checkbox" id="checkbox" name="checkbox" required>
+                    <label for="checkbox">Я погоджуюсь на обробку моїх <a href="./policy-desktop.pdf">персональних даних</a></label>
+                  </div>
+
                   <input class="form__submit" type="submit" value="Відправити">
+
+
+
                 </form>
               </div>
         
@@ -321,7 +333,8 @@
           </div>
 
           <div class="card-second-container">
-            <a href="./program.pdf" class="program-pdf">Дивитись повну програму iвенту</a>
+            <a href="./program-desktop.pdf" class="program-pdf">Дивитись повну програму iвенту</a>
+            <a href="./program-mobile.pdf" class="program-pdf-mobile">Дивитись повну програму iвенту</a>
           </div>
         </div>
       </div>
@@ -1669,6 +1682,7 @@
         </div>
       </div>
     </div>
+    
 
     <img src="./assets/images/figure-wrap.svg" alt="footer-mobile-figure" class="footer-mobile-figure">
   </footer>

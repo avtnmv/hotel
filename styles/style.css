@@ -1201,7 +1201,19 @@ dialog::backdrop {
     width: 570px;
   }
 
-
+  .program-pdf{
+    background-color: #0141F9;
+    color: white;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 269px;
+    width: 558px;
+    transition: .3s ease-in;
+    font-size: 24px;
+  }
   .wrap {
     max-width: 1200px;
     margin: auto;

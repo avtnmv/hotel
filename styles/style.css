@@ -767,7 +767,7 @@ dialog::backdrop {
     font-weight: 400;
 }
 .do-not-lose{
-    margin-top: 48px;
+    margin-top: 96px;
     display: flex;
     align-items: center;
     justify-content: space-between;
